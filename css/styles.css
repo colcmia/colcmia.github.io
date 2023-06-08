@@ -1,5 +1,206 @@
+@charset "utf-8";
+
+/* common */
+body {
+  margin: 0;
+  font-family: 'Kaisei Opti', serif;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+h2 {
+  margin: 16px 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+/* header */
+header {
+  background:#00363a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
 h1 {
-  font-size: 24px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+  margin: 0;
+  font-size: 0;
+}
+
+.logo-pc {
+  display: none;}
+
+h3 {
+  margin: 0;
+  font-weight: normal;
+
+}
+
+
+
+.btn {
+  background:white;
+  color: #00363a;
+  padding: 8px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* hero */
+.hero {
+  height: 600px;
+  background: beige;
+  padding-top: 16px;
+}
+
+.hero h2 {
+  text-align: center;
+}
+
+.hero p {
+  margin-top: 16px;
+  text-align: center;
+}
+.hero img {
+  margin-top: 16px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 5s;
+
+}
+.hero img.current {
+  opacity: 1;
+}
+
+/* products */
+
+.products {
+  padding: 64px 16px;
+}
+
+.product {
+  margin-top: 64px; 
+}
+
+.pic {
+  text-align: center;
+}
+
+.products h3 {
+  margin-top: 16px;
+}
+
+.product p {
+  margin-top: 16px;
+}
+
+/* notice */
+.notice {
+  padding: 64px 16px;
+  background: beige;
+}
+article {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+article + article {
+  margin-top: 32px;
+}
+
+
+.text {
+  flex: 1;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* info */
+.info {
+  padding: 32px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: auto;
+  margin: 0 auto;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* inquiry */
+.inquiry {
+  background: beige;
+  padding: 32px 0;
+  text-align: center;
+}
+
+
+/* footer */
+
+footer {
+  padding: 16px 0;
+  text-align: center;
+  background: #00363a;
+  color: white;
+  border-top: 1px solid #ccc;
+}
+
+small {
+  font-size: 14px;
+}
+
+i {
+  font-size: 16px;
+}
+
+/* large screen */
+
+@media (min-width: 600px) { 
+
+  /* header */
+  .logo-sp {
+    display: none;
+  }
+
+  .logo-pc {
+    display: inline;
+  }
+
+  /* products */
+  .product {
+    display: flex;
+    gap: 32px;
+  }
+
+  .pic {
+    width: 300px;
+  }
+
+  .desc {
+    flex: 1;
+  }
+
+  .reversed {
+    flex-direction: row-reverse;
+  }
 }

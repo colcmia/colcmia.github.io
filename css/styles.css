@@ -16,6 +16,12 @@ h2 {
   text-align: center;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  box-sizing: border-box;
+}
 
 /* header */
 header {
@@ -23,7 +29,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 16px 0;
 }
 
 h1 {
@@ -53,27 +59,27 @@ h3 {
 
 /* hero */
 .hero {
-  height: 600px;
-  background: beige;
+  height: 500px;
+  background-color: beige;
   padding-top: 16px;
 }
 
-.hero h2 {
-  text-align: center;
-}
+
 
 .hero p {
   margin-top: 16px;
   text-align: center;
+
 }
 .hero img {
-  margin-top: 16px;
-  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  height: 265px;
   object-fit: cover;
   position: absolute;
   opacity: 0;
-  transition: opacity 5s;
-
+  transition: opacity 3s;
 }
 .hero img.current {
   opacity: 1;
@@ -131,21 +137,9 @@ h3 {
   padding: 32px 0;
 }
 
-table {
-  border-collapse: collapse;
-  width: auto;
-  margin: 0 auto;
-}
-
-th {
-  border: 1px solid black;
-  padding: 8px;
-}
-
-td {
-  border: 1px solid black;
-  padding: 8px;
-}
+dt {
+  margin: 16px 0;
+} 
 
 /* inquiry */
 .inquiry {

@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="給食ぱん屋">
+    <meta property="og:type" content="ウェブページ">
+    <meta property="og:description" content="美味しいパン屋の説明">
+    <meta property="og:url" content="ウェブページのURL">
+    <meta property="og:image" content="サムネイル画像のURL">
   <title>給食ぱん屋</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +19,11 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header >
+  <header>
+    <div class="container">
     <h1>
-      <img src="https://user-images.githubusercontent.com/102784267/233595864-a9149c3d-c29a-45d1-94a8-8f7558ec8cdc.png" width="177" alt="給食ぱん屋" class="logo-sp">
-      <img src="https://user-images.githubusercontent.com/102784267/233595856-c124accc-571b-4490-ae97-090d07d8f737.png" width="300" alt="給食ぱん屋" class="logo-pc">
+      <img src="https://user-images.githubusercontent.com/102784267/233595864-a9149c3d-c29a-45d1-94a8-8f7558ec8cdc.png" width="177" alt="給食ぱん屋ロゴ" class="logo-sp">
+      <img src="https://user-images.githubusercontent.com/102784267/233595856-c124accc-571b-4490-ae97-090d07d8f737.png" width="312" alt="給食ぱん屋ロゴ" class="logo-pc">
     </h1>
     <div>
       <a href="#products" class="btn">商品紹介</a>
@@ -25,17 +31,24 @@
       <a href="#info" class="btn">店舗情報</a>
       <a href="#inquiry" class="btn">お問合せ</a>
     </div>
+  </div>
   </header>
-  <section class="hero container">
+  <section class="hero">
+    <div class="container">
+    <div>
       <h2>思い出の給食パンをお手軽に</h2>
       <p>元小学校教師の米本 朝陽（こめもと あさひ）は<br>もう一度食べたい、懐かしの給食パンを提供する<br>『給食ぱん屋』を9月1日にグランドオープンします。</p>
- 
-    <img src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png" width="400" height="400" alt="たくさんの胡麻パン" class="current">
-    <img src="https://user-images.githubusercontent.com/102784267/233598868-cf75b367-27f2-4dfa-9882-ed17c2f2b3d0.png" width="400" height="400" alt="たくさんのミニフランスパン" >
-    <img src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png" width="400" height="400" alt="あみこみパン">
+    </div>
+     <div>
+    <img src="https://user-images.githubusercontent.com/102784267/233598726-0516e701-8fdb-46bd-8194-4e6b90ffabce.png" width="400" height="265" alt="たくさんの胡麻パン" class="current">
+    <img src="https://user-images.githubusercontent.com/102784267/233598868-cf75b367-27f2-4dfa-9882-ed17c2f2b3d0.png" width="400" height="265" alt="たくさんのミニフランスパン" >
+    <img src="https://user-images.githubusercontent.com/102784267/233598821-f3f54230-227a-4b40-a3cc-26290c252190.png" width="400" height="265" alt="あみこみパン">
+    </div>
+  </div>
 </section>
 
 <section class="products" id="products">
+  <div class="container">
   <!-- 商品紹介  -->
   <h2>商品紹介</h2>
   
@@ -79,11 +92,12 @@
       </div>
     </section>
 
-
+  </div>
 </section>
 
   
 <section class="notice" id="notice">
+  <div class="container">
   <!-- お知らせ -->
   <h2>お知らせ</h2>
   <article>
@@ -107,27 +121,27 @@
       <p>300円以上お買い上げのお客様に、コッペパン一個無料券を差し上げます。</p>
     </div>
   </article>
-
+</div>
 </section>
 
 <section class="info" id="info">
   <!-- 店舗情報 -->
+  <div class="container">
   <h2>店舗情報</h2>
 
-  <table>
-    <thead>
-      <tr><th>アクセス</th><th><img src="https://user-images.githubusercontent.com/102784267/233602759-8d23b6ac-9fd1-4f72-a002-a90fbb27e67e.png" width="300"></th></tr>
-    </thead>
-    <tbody>
-      <tr><td>住所</td><td>〒256-0056 東京都二五六区2-5-6</td></tr>
-      <tr><td>交通手段</td><td>二五六駅徒歩５分。<br>お車でお越しの際は、コインパーキングをご利用ください。</td></tr>
-      <tr><td>定休日</td><td>水曜日</td></tr>
-      <tr><td>営業時間</td><td>10:00-17:00</td></tr>
-      <tr><td>電話番号</td><td>03-0256-2256</td></tr>
-    </tbody>
-  </table>
+  <dl>
+      <dt>アクセス</dt><dd><img src="https://user-images.githubusercontent.com/102784267/233602759-8d23b6ac-9fd1-4f72-a002-a90fbb27e67e.png" width="400"></dd>
+      <dd><a href="https://www.google.com/maps">Google Maps</a>
+      </dd>
+      <dt>住所</dt><dd>〒256-0056 東京都二五六区2-5-6</dd>
+      <dt>交通手段</dt><dd>二五六駅徒歩５分。お車でお越しの際は、コインパーキングをご利用ください。</dd>
+      <dt>定休日</dt><dd>水曜日</dd>
+      <dt>営業時間</dt><dd>10:00-17:00</dd>
+      <dt>電話番号</dt><dd>03-0256-2256</dd>
 
+  </dl>
 
+</div>
 </section>
 <section class="inquiry" id="inquiry">
 
